@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static '../static/bootstrap-5.1.3-dist/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static '../static/images/seal.png' %}"
+      type="image/x-icon"
+    />
+    <title>DTR Management Information System</title>
+    <link rel="stylesheet" href="{% static '../static/css/homepage.css' %}" />
+    <link rel="stylesheet" href="../static/animate.css-main/animate.css-main/animate.min.css">
+
+    <style>
+      html {
+        --scrollbarBG: #e9e9e9;
+        --thumbBG: #123512;
+      }
+
+      body {
+        background-color:#e9e9e9;
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+      }
+
+      body::-webkit-scrollbar {
+        height: 11px;
+        width: 11px;
+      }
+      
+      body::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!--upper section-->
+    <div class="container animate__animated animate__fadeIn" style="min-height: 80vh">
+      <div class="w-100 d-flex align-items-center justify-content-center gap-5" style="margin-top: 4rem;">
+        <div style="width: 20rem; text-align: center;">
+          <img src="{% static '../static/images/seal.png' %}" width="100%" alt="">
+        </div>
+        <div class="w-75 text-lg-start text-center">
+          <h1 style="text-transform: uppercase; font-size: 95px; line-height: 95px;">
+            DTR Management<br>
+            Information System
+          </h1>
+        </div>
+      </div>
+    </div>
+      
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="{% url 'login' %}">
+          <button class="button btn_bhover" style="text-align: center; margin-top: -10rem; margin-bottom: 20px;">Login</button>
+        </a>
+      </div>
+    
+      <a id="redirect-location-down">
+        <div style="width: 70px; margin: auto;">
+          <a href="#about_us_container">
+            <img
+              class="d-flex justify-content-center align-items-center"
+              style="text-align: center;"
+              width="100%"
+              src="{% static '../static/images/arrow-down.png' %}"
+            />
+          </a>
+        </div>
+      </a>
+
+
+    <!--lower section-->
+    <div
+      style="padding-top: 2rem; margin-bottom: 5rem;"
+      id="about_us_container"
+      class="lower-section"
+    >
+      <a id="redirect-location-up"></a>
+      <div style="width: 70px; margin: 0 auto">
+        <a href="#">
+          <img
+            class="d-flex justify-content-center align-items-center"
+            style="text-align: center;"
+            width="100%"
+            src="{% static '../static/images/arrow-up.png' %}"
+          />
+        </a>
+      </div>
+
+            <h4 class="container d-flex flex-column mt-3"
+            style="
+              text-align: justify;
+              font-family: 'Anton', sans-serif;
+              color: rgb(18, 53, 18);
+            ">THE CLIQUE</h4>
+   
+
+      <div style="text-align: center">
+        <div
+          style="display: inline-block; vertical-align: top; text-align: center"
+        >
+          <img
+            src="{% static '../static/images/K.jpg' %}"
+            class="round-photo"
+            style="border-style: solid; border-color: #123512"
+          />
+          <br />
+          <rectangle
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              background-color: #123512;
+              color: white;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 159px;
+            "
+            >KENT HAROLD DOMINGO</rectangle
+          ><br />
+          <h6
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+              font-size: 13px;
+              margin-top: 8px;
+              color: #123512;
+            "
+          >
+            Lead Developer
+          </h6>
+        </div>
+        <div
+          style="display: inline-block; vertical-align: top; text-align: center"
+        >
+          <img
+            src="{% static '../static/images/N.jpg' %}"
+            class="round-photo"
+            style="border-style: solid; border-color: #123512"
+          />
+          <br />
+          <rectangle
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              background-color: #123512;
+              color: white;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 159px;
+            "
+            >NATHALIE ENRIQUEZ</rectangle
+          >
+          <h6
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+              font-size: 13px;
+              margin-top: 8px;
+              color: #123512;
+            "
+          >
+            Project Manager
+          </h6>
+        </div>
+        <div
+          style="display: inline-block; vertical-align: top; text-align: center"
+        >
+          <img
+            src="{% static '../static/images/AF.jpg' %}"
+            class="round-photo"
+            style="border-style: solid; border-color: #123512"
+          />
+          <br />
+          <rectangle
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              background-color: #123512;
+              color: white;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 159px;
+            "
+            >AL FERNANDEZ</rectangle
+          >
+          <h6
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+              font-size: 13px;
+              margin-top: 8px;
+              color: #123512;
+            "
+          >
+            Business Analyst
+          </h6>
+        </div>
+        <div
+          style="display: inline-block; vertical-align: top; text-align: center"
+        >
+          <img
+            src="{% static '../static/images/M.jpg' %}"
+            class="round-photo"
+            style="border-style: solid; border-color: #123512"
+          />
+          <br />
+          <rectangle
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              background-color: #123512;
+              color: white;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 159px;
+            "
+            >MOHAMMAD IYANG ISMULA</rectangle
+          >
+          <h6
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+              font-size: 13px;
+              margin-top: 8px;
+              color: #123512;
+            "
+          >
+            Quality Assurance Engineer
+          </h6>
+        </div>
+        <div
+          style="display: inline-block; vertical-align: top; text-align: center"
+        >
+          <img
+            src="{% static '../static/images/J.jpg' %}"
+            class="round-photo"
+            style="border-style: solid; border-color: #123512"
+          />
+          <br />
+          <rectangle
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              background-color: #123512;
+              color: white;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-radius: 159px;
+            "
+            >THRYANN JAMES MIÑOZA</rectangle
+          >
+          <h6
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: bold;
+              font-size: 13px;
+              margin-top: 8px;
+              color: #123512;
+            "
+          >
+            UI/UX Designer
+          </h6>
+        </div>
+      </div>
+      <div
+        class="container d-flex flex-column mt-3"
+        style="
+          font-size: 15px;
+          text-align: justify;
+          font-family: 'Poppins', sans-serif;
+          color: rgb(18, 53, 18);
+        "
+      >
+        <p>
+          We are a passionate group of software developers who believe in the
+          impact that technology can have on people's lives. Our team, "The
+          Clique," was created with the goal of fostering students and ideas
+          through interviewing and collaboration with the institution. Our aim
+          is to provide a platform where individuals can connect with
+          like-minded individuals, share ideas, and support each other in their
+          endeavors.
+        </p>
+      </div>
+
+      <div
+        class="container d-flex flex-column"
+        style="
+          font-size: 15px;
+          text-align: justify;
+          font-family: 'Poppins', sans-serif;
+          color: rgb(18, 53, 18);
+        "
+      >
+        <p>
+          The DTR Management Information System is a result of our commitment to
+          using technology for practical solutions. The program is designed to
+          simplify and streamline the process of recording and tracking employee
+          time, making it easier for businesses to manage their workforce. Our
+          goal is to provide a reliable and user-friendly tool that helps
+          companies improve their operational efficiency and stay on top of
+          their business objectives.
+        </p>
+      </div>
+
+      <div
+        class="container d-flex flex-column"
+        style="
+          font-size: 15px;
+          text-align: justify;
+          font-family: 'Poppins', sans-serif;
+          color: rgb(18, 53, 18);
+        "
+      >
+        <p>
+          It is our mission to make a positive
+          difference in the world through technology. We are committed to
+          continuously improving our products and services to meet the evolving
+          needs of our users.
+        </p>
+      </div>
+      
+          <img
+            style="display: block; margin: auto; "
+            width="5%"
+            src="../static/images/tc-logo.png"
+          />
+    </div>
+
+
+    <script src="{% static '../static/bootstrap-5.1.3-dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
